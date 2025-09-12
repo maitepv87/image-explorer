@@ -7,12 +7,12 @@ function App() {
   const [images, setImages] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [hasSearched, setHasSearched] = useState(false); // ← nuevo estado
+  const [hasSearched, setHasSearched] = useState(false);
 
   const handleSubmit = async (searchTerm) => {
     setIsLoading(true);
     setError(null);
-    setHasSearched(true); // ← marca que ya se hizo una búsqueda
+    setHasSearched(true);
 
     try {
       const response = await searchImages(searchTerm);
