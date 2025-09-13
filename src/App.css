@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 2rem;
 }
 
@@ -79,4 +79,19 @@
   height: auto;
   border-radius: 8px;
   display: block;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    column-count: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-card {
+    width: 90%;
+    max-width: 400px;
+  }
 }

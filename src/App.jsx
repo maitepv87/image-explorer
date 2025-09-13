@@ -10,6 +10,9 @@ function App() {
   const [hasSearched, setHasSearched] = useState(false);
 
   const handleSubmit = async (searchTerm) => {
+    const trimmedTerm = searchTerm.trim();
+    if (!trimmedTerm) return;
+
     setIsLoading(true);
     setError(null);
     setHasSearched(true);
